@@ -14,5 +14,16 @@ def menu(p=0):
     
     #input
     event , values = Window.read()
-    while values[0]
-    print(f'valor digitado: {values[0]}')
+    
+    #input validaton
+    if event == 'OK':
+        try: 
+            int(values[0])
+        except:
+            sg.popup_ok('Only numbers!')
+            event, values = Window.read()
+
+      
+    Window.close()
+    print('evento: ', event)
+    return values[0]
