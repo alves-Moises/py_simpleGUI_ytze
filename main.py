@@ -11,13 +11,13 @@ def main():
     
     # all the stuff inside the window
     layout = [  
-        [ sg.Text('Yatzee!')],
+        [ sg.Text('Yatzee!', justification='center')],
         [ sg.Text('')],
-        [ sg.Button('OK')] 
+        [ sg.Button('OK', size=(300, 100))] 
         ]
 
     # create the window
-    Window = sg.Window('Yatzee!', layout)
+    Window = sg.Window('Yatzee!', layout, size=(200, 100))
 
     #event loot to process "events" and get the values of the inputs
     while True:
