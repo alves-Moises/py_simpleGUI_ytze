@@ -22,7 +22,9 @@ def main():
         event, values = Window.read()
         if event == sg.WIN_CLOSED or event == 'Cancel':
             break
-        print('You entered :', values[0])
+        if event == 'OK':
+            Window.close()
+        # print('You entered :', values[0])
 
         p = l.menu(p)
         print('P: ', p)
