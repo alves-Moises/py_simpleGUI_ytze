@@ -2,6 +2,7 @@ import PySimpleGUI as sg
 from PySimpleGUI.PySimpleGUI import Window
 
 import layout as l
+import functions as f
 
 def main():
     p = 0
