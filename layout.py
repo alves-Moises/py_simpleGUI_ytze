@@ -1,6 +1,8 @@
+from os import popen
+from tkinter.constants import INSERT
 from typing import Text
 import PySimpleGUI as sg
-from PySimpleGUI.PySimpleGUI import Window
+from PySimpleGUI.PySimpleGUI import Window, popup_error
 
 def menu(p=0):
 
