@@ -24,5 +24,6 @@ def main():
             break
         print('You entered :', values[0])
 
-        l.menu(p)
+        p = l.menu(p)
+        print('P: ', p)
 main()
