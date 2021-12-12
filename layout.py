@@ -11,6 +11,8 @@ def menu(p=0):
                 [sg.Input(), sg.Button('OK')]
                     ]   
     Window = sg.Window('Yatzee', layout)
+    
+    #input
     event , values = Window.read()
     while values[0]
     print(f'valor digitado: {values[0]}')
