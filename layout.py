@@ -1,3 +1,4 @@
+from typing import Text
 import PySimpleGUI as sg
 from PySimpleGUI.PySimpleGUI import Window
 
