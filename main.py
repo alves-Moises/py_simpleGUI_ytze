@@ -10,8 +10,9 @@ def main():
     # all the stuff inside the window
     layout = [  
         [ sg.Text('Yatzee!')],
-                [ sg.Text(''), sg.InputText()],
-                [ sg.Button('OK'), sg.Button('Cancel')] ]
+        [ sg.Text('')],
+        [ sg.Button('OK')] 
+        ]
 
     # create the window
     Window = sg.Window('Yatzee!', layout)
