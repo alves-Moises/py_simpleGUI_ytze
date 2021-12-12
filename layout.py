@@ -6,11 +6,12 @@ def menu(p=0):
 
     # players numb
     layout = [ 
-                [sg.Text('MENU')],
+                [sg.Text('WELCOME TO MY WORLD!', expand_x=True)],
+                [],
                 [sg.Text('Number of players: ')],
-                [sg.Input(), sg.Button('OK')]
+                [sg.Input(expand_x=True), sg.Button('OK')]
                     ]   
-    Window = sg.Window('Yatzee', layout)
+    Window = sg.Window('Yatzee', layout, size=(400, 100))
     
     #input
     event , values = Window.read()
