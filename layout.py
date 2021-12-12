@@ -27,3 +27,35 @@ def menu(p=0):
     Window.close()
     print('evento: ', event)
     return values[0]
+
+def players_name(p):
+    # print('P: ', p)
+    layout = [
+                [sg.Text(f'Please the name of the {"player" if p == 1 else "players"}:')],
+                [],
+                [sg.Button('OK')]
+            ]
+
+    temp_l = []        
+    i = 0
+
+    while i < int(p): 
+        temp_l.append([[sg.Text(f'{[i+1]}: ')], [sg.Input()]])
+        i+=1
+
+    layout.insert(1, temp_l)
+    
+    Window = sg.Window('Players...', layout)
+
+    valid = False
+    while not valid:
+        event, names = Window.read()
+        valid = True
+        for i in range(len(names)):
+            
+            if names[i] == '':
+                popup_error(f'These fiels canot be empt!') 
+                valid = False
+                break
+    Window.close()
+    return(names)
