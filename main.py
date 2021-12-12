@@ -7,6 +7,7 @@ import functions as f
 def main():
     p = 0
     sg.theme('DarkPurple2')
+    name_list= []
     
     # all the stuff inside the window
     layout = [  
