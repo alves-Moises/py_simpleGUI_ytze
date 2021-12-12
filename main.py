@@ -30,5 +30,12 @@ def main():
         # print('You entered :', values[0])
 
         p = l.menu(p)
-        print('P: ', p)
+        names = l.players_name(p)
+        for i in range(len(names)):
+            name_list.append(names[i])
+        
+        # print('P: ', p)
+        # print('names: ', name_list)
+        # print(names)
+        
 main()
