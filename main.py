@@ -22,6 +22,7 @@ def main():
     #event loot to process "events" and get the values of the inputs
     while True:
 
+        # first window
         event, values = Window.read()
         if event == sg.WIN_CLOSED or event == 'Cancel':
             break
@@ -29,13 +30,15 @@ def main():
             Window.close()
         # print('You entered :', values[0])
 
+        # get player name
         p = l.menu(p)
         names = l.players_name(p)
         for i in range(len(names)):
             name_list.append(names[i])
+
+        #get initial scores
+        score_list = f.get_score(name_list)
         
-        # print('P: ', p)
-        # print('names: ', name_list)
-        # print(names)
+        print(score_list)
         
 main()
