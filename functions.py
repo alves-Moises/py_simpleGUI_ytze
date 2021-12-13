@@ -17,12 +17,10 @@ def comb_func():
             }
     return comb
 
-def define_jogadores(qtd):
+def get_score(names):
     info = {}
-    nomes = []
-    for i in range(qtd):
-        print(f'Digite o nome do jogador {i + 1}: ', end = '')
-        nome = input()
-        nomes.append(nome)
-        info[nome] = comb_func()
-    return[nomes, info]
+
+    for name in names:
+        info[name] = comb_func()
+
+    return info
