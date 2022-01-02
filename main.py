@@ -17,8 +17,9 @@ def main():
     
     layout = [  
         [ sg.Text('Yatzee!', justification='center')],
-        [ sg.Text('')],
-        [ sg.Button('OK', size=(300, 100))] 
+        [ sg.Image(i_dices[r.randint(1, 6)]), sg.Image(i_dices[r.randint(1, 6)]), sg.Image(i_dices[r.randint(1, 6)])],
+        [ sg.HorizontalSeparator('#660099')],
+        [ sg.Button('OK', pad=15)]
         ]
 
     # create the window
