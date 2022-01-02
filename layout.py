@@ -9,7 +9,6 @@ def menu(p=0):
     # players numb
     layout = [ 
                 [sg.Text('WELCOME TO MY WORLD!', expand_x=True)],
-                [],
                 [sg.Text('Number of players: ')],
                 [sg.Input(expand_x=True), sg.Button('OK')]
             ]   
