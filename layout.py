@@ -18,14 +18,24 @@ def menu(p=0):
     event , values = Window.read()
     
     #input validaton
-    if event == 'OK':
-        try: 
-            int(values[0])
-        except:
-            sg.popup_ok('Only numbers!')
-            event, values = Window.read()
-        else: 
-            Window.close()
+    valid = False
+    while not valid:
+        event , values = Window.read()
+        valid = True
+        if event == 'OK':
+            try: 
+                values[0] = int(values[0])                 
+            except:
+                valid = False
+                sg.popup_error('Only numbers!')
+                # event, values = Window.read()
+
+            else: 
+                if values[0] < 1:
+                    valid = False
+                    sg.popup('Invalid value!')   
+                else:
+                    Window.close()
       
     # Window.close()
     print('evento: ', event)
