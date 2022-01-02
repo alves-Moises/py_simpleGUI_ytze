@@ -12,6 +12,9 @@ def main():
     name_list= list()
     
     # all the stuff inside the window
+    i_dices = f.dices_ico()
+    print(i_dices)
+    
     layout = [  
         [ sg.Text('Yatzee!', justification='center')],
         [ sg.Text('')],
