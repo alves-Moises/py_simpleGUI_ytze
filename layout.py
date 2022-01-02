@@ -51,6 +51,8 @@ def players_name(p):
     Window = sg.Window('Players...', layout)
 
     valid, duplicate, void = False, False, False
+    
+    # validation of input names
     while not valid:
         event, names = Window.read()
         valid  = True
@@ -72,7 +74,6 @@ def players_name(p):
                         break
 
         duplicate = False
-        # if event=='OK':
 
     Window.close()
     return(names)
