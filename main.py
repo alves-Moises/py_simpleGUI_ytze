@@ -9,7 +9,7 @@ import random as r
 def main():
     p = 0
     sg.theme('DarkPurple2')
-    name_list= []
+    name_list= list()
     
     # all the stuff inside the window
     layout = [  
