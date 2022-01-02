@@ -22,9 +22,10 @@ def main():
         ]
 
     # create the window
-    Window = sg.Window('Yatzee!', layout, size=(200, 100))
+    Window = sg.Window('Yatzee!', layout)
 
     #event loot to process "events" and get the values of the inputs
+    #getin players names
     while True:
 
         # first window
@@ -45,5 +46,7 @@ def main():
         score_list = f.get_score(name_list)
         
         print(score_list)
+
+        
         
 main()
