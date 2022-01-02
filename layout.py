@@ -13,7 +13,7 @@ def menu(p=0):
                 [sg.Text('Number of players: ')],
                 [sg.Input(expand_x=True), sg.Button('OK')]
                     ]   
-    Window = sg.Window('Yatzee', layout, size=(400, 100))
+    Window = sg.Window('Yatzee', layout, size=(400, 500))
     
     #input
     event , values = Window.read()
@@ -25,9 +25,10 @@ def menu(p=0):
         except:
             sg.popup_ok('Only numbers!')
             event, values = Window.read()
-
+        else: 
+            Window.close()
       
-    Window.close()
+    # Window.close()
     print('evento: ', event)
     return values[0]
 
