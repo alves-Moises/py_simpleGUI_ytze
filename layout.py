@@ -50,12 +50,13 @@ def players_name(p):
     
     Window = sg.Window('Players...', layout)
 
-    valid = False
+    valid, duplicate, void = False, False, False
     while not valid:
         event, names = Window.read()
-        valid = True
+        valid  = True
+        
         for i in range(len(names)):
-            
+            #Verify if field are'nt empt
             if names[i] == '':
                 popup_error(f'These fiels canot be empt!') 
                 valid = False
