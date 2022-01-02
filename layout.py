@@ -32,19 +32,18 @@ def menu(p=0):
     return values[0]
 
 def players_name(p):
-    # print('P: ', p)
     layout = [
                 [sg.Text(f'Please the name of the {"player" if p == 1 else "players"}:')],
                 [],
                 [sg.Button('OK')]
             ]
 
-    temp_l = []        
+    temp_l = list()        
     i = 0
 
     while i < int(p): 
         temp_l.append([[sg.Text(f'{[i+1]}: ')], [sg.Input()]])
-        i+=1
+        i += 1
 
     layout.insert(1, temp_l)
     
