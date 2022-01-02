@@ -60,5 +60,18 @@ def players_name(p):
                 popup_error(f'These fiels canot be empt!') 
                 valid = False
                 break
+
+            #verify duplicated names                
+            elif duplicate == False:
+                for j in range(i, len(names)):
+                    if names[i] == names[j]:
+                        popup_error(f'Names cannot be duplicated!') 
+                        valid = False
+                        duplicate = True
+                        break
+
+        duplicate = False
+        # if event=='OK':
+
     Window.close()
     return(names)
