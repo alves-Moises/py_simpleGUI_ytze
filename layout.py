@@ -14,9 +14,6 @@ def menu(p=0):
             ]   
     Window = sg.Window('Yatzee', layout, size=(400, 500))
     
-    #input
-    event , values = Window.read()
-    
     #input validaton
     valid = False
     while not valid:
@@ -52,7 +49,7 @@ def players_name(p):
     i = 0
 
     while i < int(p): 
-        temp_l.append([[sg.Text(f'{[i+1]}: ')], [sg.Input()]])
+        temp_l.append([[sg.Text(f'{[i+1]}: '), sg.Input(size=(30))]])
         i += 1
 
     layout.insert(1, temp_l)
