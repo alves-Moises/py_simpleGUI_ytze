@@ -6,7 +6,7 @@ def dices_ico():
         4: 'assets/ico/D4-ico.png', 
         5: 'assets/ico/D5-ico.png', 
         6: 'assets/ico/D6-ico.png'
-        }
+    }
     return dices
 
 def comb_func():
