@@ -12,7 +12,7 @@ def menu(p=0):
                 [],
                 [sg.Text('Number of players: ')],
                 [sg.Input(expand_x=True), sg.Button('OK')]
-                    ]   
+            ]   
     Window = sg.Window('Yatzee', layout, size=(400, 500))
     
     #input
