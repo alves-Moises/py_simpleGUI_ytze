@@ -28,7 +28,7 @@ def comb_func():
     return comb
 
 def get_score(names):
-    info = {}
+    info = dict()
 
     for name in names:
         info[name] = comb_func()
