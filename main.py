@@ -4,6 +4,8 @@ from PySimpleGUI.PySimpleGUI import Window
 import layout as l
 import functions as f
 
+import random as r
+
 def main():
     p = 0
     sg.theme('DarkPurple2')
