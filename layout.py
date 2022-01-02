@@ -64,7 +64,7 @@ def players_name(p):
 
             #verify duplicated names                
             elif duplicate == False:
-                for j in range(i, len(names)):
+                for j in range(i+1, len(names)):
                     if names[i] == names[j]:
                         popup_error(f'Names cannot be duplicated!') 
                         valid = False

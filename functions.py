@@ -17,12 +17,13 @@ def comb_func():
                 '4':            -1,
                 '5':            -1,
                 '6':            -1,
-                'pp':           -1,  # 4 iguais
-                '23x':          -1,  # par e trinca
-                'es':           -1,  # 1-5 
-                'ytz':          -1,  # Yatze! 
-                'yy':           -1,   # 11111111111
-                '0':            -1
+                '3x':           -1,  # 3 of a kind
+                '4x':           -1,  #  4 of a kind
+                'FHouse':       -1,  # Full House  (2 of a kind and 3 of a kind)
+                'small':        -1,  # Small Straight 
+                'large':        -1,  # 11111111111
+                'yy':           -1,  # Yatzee!
+                'chance':       -1
             }
     return comb
 
